@@ -69,7 +69,7 @@ def train_challenge_model(data_folder, model_folder, verbose):
             print('\n')
         save_challenge_model(model_folder, shape_classifier, file_name='shape_classifier')
         
-    # Stage 2: Train the classifier for Outcome classification
+    
  
         
     if verbose:
@@ -144,7 +144,7 @@ def recording_shape_diagnose(multi_scale_specs, shape_classifier, systolic_murmu
 
 @torch.no_grad()
 def run_challenge_model(model, data, recordings, verbose):
-    (device, preprocessor, shape_classifier, systolic_murmur_class) = model  # Removed outcome-related components
+    (device, preprocessor, shape_classifier, systolic_murmur_class) = model  
     interval = 1.0
     recording_shape_counts = np.zeros(len(systolic_murmur_class), dtype=np.int_)
 

@@ -4,7 +4,7 @@ import torch
 from helper_code import find_patient_files, load_patient_data, get_num_locations, get_locations, get_shape, load_wav_file
 from helper_code import compare_strings, get_age, get_sex, get_height, get_weight, get_pregnancy_status
 
-# Updated mappings to remove "Unknown" and outcome-related labels
+
 shape_mapping_str2int = {'Diamond': 0, 'Plateau': 1,'Decrescendo': 2}
 shape_mapping_int2str = {0: 'Diamond', 1: 'Plateau',2: 'Decrescendo'}
 
